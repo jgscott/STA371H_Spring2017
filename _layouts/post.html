@@ -1,27 +1,26 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article {% if page.feature-img %}class="feature-image"{% endif %}>
 
-  <header class="artilce_header">
-    <h1 class="artilce_title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="artilce_meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
+    <h1 class="title">{{ page.title }}</h1>
+    
+    <p class="meta">
+    {{ page.date | date: "%B %-d, %Y" }}
+    {% if page.author %} - {{ page.author }}{% endif %}
+    </p>
   </header>
 
-  <div class="article-content" itemprop="articleBody">
-    {{ page.content }}
-  </div>
+  <section class="post-content">
+    {{ content }}
+  </section>
 
-  <footer class="article-footer">
-
-  {% include share.html %}
-
-  <hr/>
-
-  {% include author.html %}
-
-  </footer>
-
-  {% include dq.html %}
-
+  <!-- Disqus -->
+  {% if site.theme.disqus_shortname %}
+    <section class="comments">
+      {% include disqus.html %}
+    </section>
+  {% endif %}
+  
 </article>
