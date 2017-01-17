@@ -1,26 +1,11 @@
 ---
 layout: page
-title: About the course
+title: About
 permalink: /about/
 ---
 
-### STA 371: Statistics and Modeling (Spring 2017)
+This is a simple Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/).  Plus, you can find a lot of themes at [jekyllthemes.org](http://jekyllthemes.org/)
 
-STA 371H is an honors course on statistical modeling and decision analysis for
-students in the Business Honors Program at UT-Austin.  Use the nav bar above to access all course materials.
+You can find the source code for this theme at: <data data-icon="ei-sc-github"></data>  [jekyll-simple](https://github.com/wild-flame/jekyll-simple)
 
-[The course syllabus is here.]({{ site.baseurl }}/files/syllabus_STA371_spring2017.pdf)
-
-Instructor: James Scott  
-Office: CBA 6.478  
-Office hours: Monday 4:30-5:30 and Tuesday 2-3   
-E-mail: james.scott@mccombs.utexas.edu  
-
-TAs:
-
-David Puelz  
-Office hours: TBA  
-E-mail: david.puelz@utexas.edu  
-
-Ellen Zippi
-Office hours: TBA 
+You can find the source code for Jekyll at <data data-icon="ei-sc-github"></data>  [jekyll](https://github.com/jekyll/jekyll)
