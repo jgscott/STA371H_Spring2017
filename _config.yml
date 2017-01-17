@@ -1,69 +1,31 @@
-# SITE CONFIGURATION
-baseurl: "/STA371H_Spring2017" # the subpath of your site, e.g. /blog
-url: "http://jgscott.github.io" # the base hostname & protocol for your site
-BASE_PATH: /STA371H_Spring2017
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# THEME-SPECIFIC CONFIGURATION
-theme:
-  # Meta
-  title: STA 371H (Spring 2017)
-  avatar: avatar.png
-  gravatar: # email md5 hash
-  description: "STA 371H: Statistics and Modeling (Honors) at UT-Austin" # used by search engines
-  
-  # Header and footer text
-  header_text: >
-     <p>STA 371H  •  Spring 2017 
-     <br>
-     Instructor: James Scott (james.scott@mccombs.utexas.edu)</p>
+# Site settings
+title: Your awesome title
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/jekyll-simple" # the subpath of your site, e.g. /blog
+url: "http://wildflame.me" # the base hostname & protocol for your site
+twitter_username: Taffyer 
+github_username:  wild-flame 
 
-  footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
-  
-  # Icons
-  rss: false
-  email_address: "james.scott@mccombs.utexas.edu"
-  behance:
-  bitbucket: 
-  dribbble: 
-  facebook: 
-  flickr: 
-  github: "jgscott/STA371H_Spring2017"
-  google_plus: 
-  instagram: 
-  linkedin:  # full URL
-  pinterest: 
-  reddit: 
-  soundcloud: 
-  stack_exchange:  # full URL
-  steam: 
-  tumblr: 
-  twitter: 
-  wordpress: 
-  youtube: 
-  
-  # Scripts
-  google_analytics: # tracking id, e.g. "UA-000000-01"
-  disqus_shortname:
-  
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next: "Next"
-  str_prev: "Prev"
-  str_continue_reading: "Continue reading"
-  
-  # Colors, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
-
-# BUILD SETTINGS
+# Build settings
 markdown: kramdown
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: :compressed
+kramdown:
+  input: GFM
+
+# Third-party services
+# just leave someone empty to disable it
+# google_analytics: 
+disqus_shortname:
+
+# used this for post_excerpt at index_page
+excerpt_separator: <!--description-->
