@@ -15,22 +15,24 @@ BASE_PATH: /STA371H_Spring2017
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: STA 371H (Spring 2017)
+title: STA 371H
 
 # Short description of your site
-description: "STA 371H: Statistics and Modeling (Honors) at UT-Austin"
+description: "STA 371H: Statistics and Modeling (Honors) at UT-Austin (Spring 2017)"
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About the Course: "about"
-  Resources: "resources"
+  Data Sets: "data"
   Exercises: "exercises"
+  R Scripts: "rscripts"
+  Resources: "resources"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/avatar.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
