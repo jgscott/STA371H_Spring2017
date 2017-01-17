@@ -16,11 +16,11 @@ Office: CBA 6.478
 Office hours: Monday 4:30-5:30 and Tuesday 2-3   
 E-mail: james.scott@mccombs.utexas.edu  
 
-TAs:
+Teaching Assistants:
 
 David Puelz  
 Office hours: TBA  
 E-mail: david.puelz@utexas.edu  
 
-Ellen Zippi
-Office hours: TBA 
+Ellen Zippi  
+Office hours: TBA   
