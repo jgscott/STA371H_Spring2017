@@ -5,7 +5,7 @@ title: Resources
 
 ### R Walkthroughs
 
-[These modules](http://jgscott.github.io/teaching/r/Rwalkthroughs.html) will teach you basic R skills by guiding you through some simple data analyses.
+[These modules](https://github.com/jgscott/learnR) will teach you basic R skills by guiding you through some simple data analyses.
 
 ### Course packet
 
