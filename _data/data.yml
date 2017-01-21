@@ -8,6 +8,7 @@
 - data: brca.csv
 - data: carauction_test.csv
 - data: carauction_train.csv
+- data: cars.csv
 - data: casandie.txt
 - data: cheese.csv
 - data: chymotrypsin.csv
