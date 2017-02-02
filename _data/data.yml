@@ -19,6 +19,7 @@
 - data: ethanol.csv
 - data: fips.csv
 - data: gala.csv
+- data: GasPrices.csv
 - data: gdpgrowth.csv
 - data: georgia2000.csv
 - data: gonefishing.csv
