@@ -1,3 +1,5 @@
 - r: afc.R
 - r: cars_coursepacket.R
+- r: hetpred.R
+- r: milk.R
 - r: sclass.R
