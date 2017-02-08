@@ -83,6 +83,6 @@ head(sales_grid)
 
 # Plot the data + lower/upper bounds calculated from the grid
 plot(sales ~ price, data=milk)
-lines( sales_grid[,2] ~ price_grid$price, col='red')
+lines( sales_grid[,2] ~ price, data=price_grid, col='red')
 lines( sales_grid[,3] ~ price_grid$price, col='red')
-
+lines( sales_grid[,1] ~ price_grid$price, col='blue')

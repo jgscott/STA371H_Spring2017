@@ -25,6 +25,7 @@ points(postdiction[,3] ~ FoodScore, data=afc, col='red', pch=19) # upper bound
 # Notice the "fan" shape in the plot of residuals vs fitted values
 # Our basic prediction intervals will not work if the residuals look like this
 plot(resid(lm1) ~ FoodScore, data=afc)
+plot(resid(lm1) ~ fitted(lm1), data=afc)
 
 
 ##
