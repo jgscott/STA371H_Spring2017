@@ -15,6 +15,8 @@ lmF = lm(net~age,data=subset(TenMileRace,sex=="F"))
 coef(lmM)
 coef(lmF)
 
+mean(net ~ sex, data=TenMileRace)
+
 # Clearly we get different effects due to age when we disaggregate
 plot(net~age,data=TenMileRace, col='grey', pch=19, cex=0.5)
 abline(lm1, col='black')
