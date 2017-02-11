@@ -2,6 +2,7 @@
 - r: cars_coursepacket.R
 - r: hetpred.R
 - r: milk.R
+- r: race_boot.R
 - r: sclass.R
 - r: solder.R
 - r: TenMileRace.R
