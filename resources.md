@@ -11,7 +11,7 @@ title: Resources
 
 * [Course packet part I]({{ site.baseurl }}/files/STA371H_coursepacket_part1.pdf)  
 * [Course packet part II]({{ site.baseurl }}/files/STA371H_coursepacket_part2.pdf) 
-* [Course packet part III]({{ site.baseurl }}/files/STA371H_coursepacket_part3.pdf) (Not yet posted)
+
 
 ### Other readings
 
