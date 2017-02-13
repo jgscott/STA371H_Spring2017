@@ -9,8 +9,7 @@ title: Resources
 
 ### Course packet
 
-* [Course packet part I]({{ site.baseurl }}/files/STA371H_coursepacket_part1.pdf)  
-* [Course packet part II]({{ site.baseurl }}/files/STA371H_coursepacket_part2.pdf) 
+Both Part I (Ch 1-6) and Part II (Ch 7 onwards) of the course packet are [now available in a single PDF file.]({{ site.baseurl }}/files/STA371H_coursepacket.pdf)  
 
 
 ### Other readings
