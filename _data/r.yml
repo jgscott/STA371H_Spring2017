@@ -1,6 +1,7 @@
 - r: afc.R
 - r: cars_coursepacket.R
 - r: hetpred.R
+- r: LifeExpectancy.R
 - r: milk.R
 - r: race_boot.R
 - r: sclass.R
