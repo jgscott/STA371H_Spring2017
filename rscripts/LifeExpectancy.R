@@ -42,6 +42,11 @@ boot1 = do(2500)*{
 	lm_boot
 }
 
+boot2 = do(2500)*{
+  lm_boot = lm(LifeExp ~ log(PPGDP) + Group, data=resample(LifeExpectancy))
+  lm_boot
+}
+
 # First few lines
 head(boot1)
 
@@ -60,4 +65,8 @@ coef_table(lm1)  # this function is in class_utils.R script from website
 
 # Residuals look somewhat non-normal
 hist(resid(lm1), 20)
+
+# Code for comparing vs normal dist
+hist(resid(lm1), breaks = 20, prob=TRUE)
+curve(dnorm(x, 0, sd(resid(lm1))), add=TRUE)
 
