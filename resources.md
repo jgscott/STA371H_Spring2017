@@ -11,6 +11,9 @@ title: Resources
 
 Both Part I (Ch 1-6) and Part II (Ch 7 onwards) of the course packet are [now available in a single PDF file.]({{ site.baseurl }}/files/STA371H_coursepacket.pdf)  
 
+### Old exams  
+
+[Midterm from 2016]({{ site.baseurl }}/files/midterm_STA371H_spring2016-share.pdf) 
 
 ### Other readings
 
