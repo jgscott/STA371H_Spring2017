@@ -1,5 +1,6 @@
 - r: afc.R
 - r: cars_coursepacket.R
+- r: GasPrices.R
 - r: hetpred.R
 - r: LifeExpectancy.R
 - r: milk.R
