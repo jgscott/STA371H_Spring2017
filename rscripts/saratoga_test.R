@@ -11,7 +11,7 @@ coef(lm1)
 rsquared(lm1)
 
 # permutation test: is the fuel variable significant?
-perm1 = do(1000)*{
+perm1 = do(2000)*{
 	lm(price ~ livingArea + lotSize + fireplaces + shuffle(fuel), data=SaratogaHouses)
 }
 head(perm1)
@@ -32,10 +32,16 @@ lm2 = lm(price ~ livingArea + lotSize + fireplaces + fuel + fireplaces:fuel, dat
 coef(lm2)
 rsquared(lm2)
 
-perm2 = do(1000)*{
+perm2 = do(2000)*{
 	lm(price ~ livingArea + lotSize + fireplaces + fuel + shuffle(fireplaces):shuffle(fuel), data=SaratogaHouses)
 }
 
 hist(perm2$r.squared, 20)
 abline(v=rsquared(lm2), col='red')
 
+# p-value
+sum(perm2$r.squared >= rsquared(lm2))
+sum(perm2$r.squared >= rsquared(lm2))/2000
+
+# Compare with p-values from ANOVA table
+simple_anova(lm2)
