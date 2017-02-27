@@ -1,10 +1,13 @@
 - r: afc.R
 - r: cars_coursepacket.R
+- r: cheese_demand.R
 - r: GasPrices.R
 - r: hetpred.R
 - r: LifeExpectancy.R
 - r: milk.R
+- r: overtime.R
 - r: race_boot.R
+- r: saratoga_test.R
 - r: sclass.R
 - r: solder.R
 - r: TenMileRace.R

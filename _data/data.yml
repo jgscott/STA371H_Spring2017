@@ -3,6 +3,8 @@
 - data: bacteria.txt
 - data: baseballsalary.csv
 - data: bballbets.csv
+- data: bikeshare-key.txt
+- data: bikeshare.csv
 - data: birthwt.csv
 - data: bodybrain.csv
 - data: brca.csv
