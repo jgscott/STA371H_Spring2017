@@ -2,6 +2,21 @@ library(mosaic)
 data(SaratogaHouses)
 source('http://jgscott.github.io/teaching/r/utils/class_utils.R')
 
+# Baseline model
+lm0 = lm(price ~ livingArea + lotSize + fireplaces, data=SaratogaHouses)
+rsquared(lm0)
+
+# Add a useless variable!
+SaratogaHouses$useless = rnorm(1728, 0, 1)
+
+# R squared with a useless variable: gets better
+lm_withuseless = lm(price ~ livingArea + lotSize + fireplaces + useless, data=SaratogaHouses)
+rsquared(lm_withuseless)
+
+# R squared with a shuffled useless variable: still useless!
+lm_shuffleduseless = lm(price ~ livingArea + lotSize + fireplaces + shuffle(useless), data=SaratogaHouses)
+rsquared(lm_shuffleduseless)
+
 
 # Question 1: is there a partial relationship between fuel system type
 # and price, adjusting for living area, lotsize, and fireplaces?
@@ -9,6 +24,23 @@ source('http://jgscott.github.io/teaching/r/utils/class_utils.R')
 lm1 = lm(price ~ livingArea + lotSize + fireplaces + fuel, data=SaratogaHouses)
 coef(lm1)
 rsquared(lm1)
+
+boot1 = do(1000)*{
+  lm(price ~ livingArea + lotSize + fireplaces + fuel, data=resample(SaratogaHouses))
+}
+
+confint(boot1)
+
+
+# one shuffled model
+lm_shuff = lm(price ~ livingArea + lotSize + fireplaces + shuffle(fuel), data=SaratogaHouses)
+rsquared(lm_shuff)
+
+rsquared(lm1)
+
+head(SaratogaHouses)
+head(shuffle(SaratogaHouses$fuel)) 
+
 
 # permutation test: is the fuel variable significant?
 perm1 = do(2000)*{
