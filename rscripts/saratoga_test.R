@@ -17,6 +17,10 @@ rsquared(lm_withuseless)
 lm_shuffleduseless = lm(price ~ livingArea + lotSize + fireplaces + shuffle(useless), data=SaratogaHouses)
 rsquared(lm_shuffleduseless)
 
+# Shuffle living area instead
+lm_shuffledlivingArea = lm(price ~ shuffle(livingArea) + lotSize + fireplaces + useless, data=SaratogaHouses)
+rsquared(lm_shuffledlivingArea)
+
 
 # Question 1: is there a partial relationship between fuel system type
 # and price, adjusting for living area, lotsize, and fireplaces?
@@ -68,7 +72,7 @@ perm2 = do(2000)*{
 	lm(price ~ livingArea + lotSize + fireplaces + fuel + shuffle(fireplaces):shuffle(fuel), data=SaratogaHouses)
 }
 
-hist(perm2$r.squared, 20)
+hist(perm2$r.squared, 30)
 abline(v=rsquared(lm2), col='red')
 
 # p-value

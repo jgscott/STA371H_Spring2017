@@ -7,6 +7,7 @@
 - r: milk.R
 - r: overtime.R
 - r: race_boot.R
+- r: saratoga_stepwise.R
 - r: saratoga_test.R
 - r: sclass.R
 - r: solder.R
