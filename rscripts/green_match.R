@@ -25,8 +25,7 @@ mean(class_b ~ green_rating, data=green)
 
 # Step 1:
 # Find matching pairs based on age and building class
-mymatch = matchit(green_rating ~ age + class_a + class_b,
-	data = green)
+mymatch = matchit(green_rating ~ age + class_a + class_b, data = green)
 
 # Step 2:
 # Check covariate balance
