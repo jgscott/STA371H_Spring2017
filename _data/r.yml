@@ -2,6 +2,7 @@
 - r: cars_coursepacket.R
 - r: cheese_demand.R
 - r: GasPrices.R
+- r: green_match.R
 - r: hetpred.R
 - r: LifeExpectancy.R
 - r: milk.R
