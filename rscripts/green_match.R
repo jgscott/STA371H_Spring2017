@@ -51,11 +51,32 @@ mean(cluster_rent ~ green_rating, data= green_matched)
 # Generally better for step 3:
 # Run a regression on the matched data,
 # to further adjust for any confounding/imbalances
-lm1 = lm(Rent ~ age + class_a + class_b + cluster_rent + green_rating,
-	data = green_matched)
+lm1 = lm(RevPSF ~ age + class_a + class_b + cluster_rent + green_rating, data = green_matched)
 summary(lm1)
 
 # Goals:
 # 1) Expand the matching to include more covariates
 # 2) Inspect/verify covariate balance among the groups
 # 3) Run a final regression to get the estimate of the green effect
+
+
+mymatch2 = matchit(green_rating ~ age + class_a + class_b + net + cluster_rent + stories + amenities + log(size) + renovated + Precipitation + cooling_costs + heating_costs, data = green)
+
+summary(mymatch2)
+
+green_matched2 = match.data(mymatch2)
+
+# Simple difference of means
+mean(RevPSF ~ green_rating, data= green_matched2)
+
+# Regression-based adjustment
+# Notice how we can include interactions!
+lm2 = lm(RevPSF ~ green_rating + class_a + class_b + net + cluster_rent + age + stories + amenities + log(size) + renovated + Precipitation + cooling_costs + heating_costs + green_rating:net, data = green_matched2)
+coef(lm2)
+
+source('http://jgscott.github.io/teaching/r/utils/class_utils.R')
+
+simple_anova(lm2)
+
+
+coef(lm_step)
