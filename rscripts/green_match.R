@@ -80,3 +80,23 @@ simple_anova(lm2)
 
 
 coef(lm_step)
+
+
+
+## Averaging over different matches
+mc1 = do(100)*{
+	mymatch = matchit(green_rating ~ age + class_a + class_b, data = green)
+	green_matched = match.data(mymatch)
+	lm1 = lm(RevPSF ~ age + class_a + class_b + green_rating, data=green_matched)
+	lm1
+}
+colMeans(mc1)
+
+
+## This is taken care of naturally in bootstrapping
+mc1 = do(1000)*{
+	mymatch = matchit(green_rating ~ age + class_a + class_b, data = resample(green))
+	green_matched = match.data(mymatch)
+	lm1 = lm(RevPSF ~ age + class_a + class_b + green_rating, data=green_matched)
+	lm1
+}
