@@ -6,7 +6,7 @@
 P = 0.09
 N = 140
 
-# How like are 5 no-shows?
+# How likely are 5 no-shows?
 # about 0.7%... use dbinom
 dbinom(5, size=N, prob = P)
 

@@ -1,6 +1,8 @@
 - r: afc.R
+- r: bivariate_normal.R
 - r: cars_coursepacket.R
 - r: cheese_demand.R
+- r: computereturns.R
 - r: GasPrices.R
 - r: green_match.R
 - r: hetpred.R
@@ -9,6 +11,7 @@
 - r: montecarlo_normal.R
 - r: overtime.R
 - r: parametric_probmodels.R
+- r: portfolio.R
 - r: race_boot.R
 - r: saratoga_stepwise.R
 - r: saratoga_test.R
