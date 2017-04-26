@@ -8,7 +8,7 @@ source("http://jgscott.github.io/teaching/r/mvnorm/computereturns.R")
 
 # Download data for a few stocks
 mystocks = c("ORCL", "JNJ", "WMT", "XOM", "MRK")
-myprices = yahooSeries(mystocks, from='2007-04-16', to='2016-04-16', frequency = 'daily')
+myprices = yahooSeries(mystocks, from='2007-04-16', to='2017-04-25', frequency = 'daily')
 
 # The first few rows
 head(myprices)

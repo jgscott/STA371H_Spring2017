@@ -1,5 +1,6 @@
 - r: afc.R
 - r: bivariate_normal.R
+- r: bvport_soln.R
 - r: cars_coursepacket.R
 - r: cheese_demand.R
 - r: computereturns.R
