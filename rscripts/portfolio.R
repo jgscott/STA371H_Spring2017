@@ -18,7 +18,7 @@ myreturns = computereturns(myprices)
 head(myreturns)
 
 # These don't look normal
-ind = 2
+ind = 3
 hist(myreturns[,ind], 100, prob=TRUE)
 curve(dnorm(x, mean(myreturns[,ind]), sd(myreturns[,ind])), add=TRUE)
 
@@ -49,7 +49,7 @@ totalwealth = sum(holdings)
 horizon = 20
 totalwealth = 10000
 pweights = c(0.2, 0.2, 0.2, 0.2, 0.2)
-holdings = weights * totalwealth
+holdings = pweights * totalwealth
 wealthtracker = rep(0, horizon) # Set up a placeholder to track total wealth
 for(today in 1:horizon) {
 	return.today = resample(myreturns, 1, orig.ids=FALSE)
