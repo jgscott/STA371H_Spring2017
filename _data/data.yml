@@ -12,6 +12,7 @@
 - data: carauction_train.csv
 - data: cars.csv
 - data: casandie.txt
+- data: challenger.csv
 - data: cheese.csv
 - data: chymotrypsin.csv
 - data: consumerexp.csv
