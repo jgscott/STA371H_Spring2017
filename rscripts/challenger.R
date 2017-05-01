@@ -24,14 +24,17 @@ plotModel(glm1)
 plotModel(glm1, xlim=c(20, 85))
 abline(v=29)
 
+curve(exp(x)/(1+exp(x)), from=-5, to = 5)
+
+
 # Temp at 2PM launch: 38F
 # Estimate P(erosion | temp = 38F)
 coef(glm1)
-mu2pm = 23.87 - 0.3682 * 38
-prob2pm = exp(mu2pm) / (1 + exp(mu2pm))
+psi2pm = 23.87 - 0.3682 * 38
+prob2pm = exp(psi2pm) / (1 + exp(psi2pm))
 
 # A little more concise
-xstar = data.frame(Temp = 38)
+xstar = data.frame(Temp = c(38, 60, 85))
 predict(glm1, newdata = xstar, type='response')
 
 
